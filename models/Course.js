@@ -17,6 +17,10 @@ const CourseSchema = new Schema({
 		type: Date,
 		default: Date.now,
 	},
+	category: {
+		type: mongoose.Schema.type.ObjectId,
+		ref: "Category",
+	},
 	slug: {
 		type: String,
 		required: true,
