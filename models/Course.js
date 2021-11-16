@@ -18,7 +18,7 @@ const CourseSchema = new Schema({
 		default: Date.now,
 	},
 	category: {
-		type: mongoose.Schema.type.ObjectId,
+		type: mongoose.Schema.Types.ObjectId,
 		ref: "Category",
 	},
 	slug: {
